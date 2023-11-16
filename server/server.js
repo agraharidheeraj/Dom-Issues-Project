@@ -1,4 +1,3 @@
-// Replace this block of code
 const express = require('express');
 const { Octokit } = require('@octokit/core');
 const cors = require('cors'); 
