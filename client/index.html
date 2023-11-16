@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>GitHub Issues UI</title>
+  </head>
+
+  <body>
+    <div class="center-container">
+      <section class="github-issues-app">
+        <header>
+          <h1>GitHub Issues</h1>
+        </header>
+        <form id="createIssueForm">
+          <span class="round"></span>
+          <input
+            type="text"
+            id="todo-input"
+            placeholder="Create a new issue..."
+          />
+        </form>
+        <form>
+          <span class="round"></span>
+          <textarea
+            id="issue-body"
+            placeholder="Issue description..."
+          ></textarea>
+        </form>
+        <button type="button" class="create-issue" onclick="handleCreateIssue()">Create</button>
+
+
+        <div class="issue-container">
+          <ul class="issues-list"></ul>
+          <div class="actions">
+            <p class="left-items"><span id="count">0</span> items left</p>
+            <a href="#" class="clear-issues" onclick="clearCompletedIssues()"
+              >Clear Completed</a
+            >
+          </div>
+        </div>
+        <div class="filters">
+          <a href="#" class="filter-btn all active" onclick="filterIssues('all')">All</a>
+
+          <a href="#" class="filter-btn active" onclick="filterIssues('active')"
+            >Active</a
+          >
+          <a
+            href="#"
+            class="filter-btn filter-btns completed"
+            onclick="filterIssues('completed')"
+            >Completed</a
+          >
+        </div>
+      </section>
+    </div>
+
+    <div id="updateOverlay" class="update-overlay">
+      <div class="update-form">
+        <h2>Update Issue</h2>
+        <label for="update-title">Title:</label>
+        <input type="text" id="update-title" />
+        <label for="update-body">Description:</label>
+        <textarea id="update-body"></textarea>
+        <button type="button" onclick="updateIssue()">Update</button>
+        <button type="button" onclick="closeUpdateOverlay()">Cancel</button>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
