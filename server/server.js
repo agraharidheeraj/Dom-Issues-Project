@@ -14,9 +14,6 @@ const octokit = new Octokit({
   auth: process.env.ACCESS_TOKEN,
 });
 
-// ... rest of your code ...
-
-
 const owner = process.env.OWNER;
 const repo = process.env.REPO;
 
