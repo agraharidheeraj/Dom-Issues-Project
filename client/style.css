@@ -445,5 +445,8 @@ p .placeholder {
     flex-direction: column;
     gap: 1rem;
   }
+  .create-issue{
+    width: 50%;
+  }
 
 }
