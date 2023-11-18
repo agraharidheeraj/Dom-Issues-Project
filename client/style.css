@@ -57,96 +57,38 @@ button {
 
 
 /* Form styling */
-form {
+
+#createIssueForm {
+  height: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  color: #b3b3b3;
-  height: 2.9rem;
-  padding: 0.5rem 0rem 0.5rem 1rem;
-}
-
-form span {
-  width: 25px;
-  height: 25px;
-  border: 2px solid #4d4d4d;
-  border-radius: 50%;
-  margin-right: 0.5rem;
-}
-
-form #todo-input {
-  flex: 1;
-  height: 2.9rem;
-  border: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%; 
+   padding: 2rem 1rem 2rem 1rem;
   background-color: #181818;
-  color: #e6e6e6;
-  font-size: 1rem;
-  padding: 0 0.5rem;
+}
+
+.input,
+.textarea {
+  display: flex;
+  flex-direction: column;
   margin-right: 2rem;
-  outline: none;
 }
 
-form #todo-input:placeholder-shown {
-  font-size: 0.8rem;
+label {
+  margin-bottom: 5px;
+  color: white;
+   font-size: 1.5rem;
 }
 
-form #todo-input:focus-visible {
-  outline: 1px solid #777a92;
-  background-color: #181818;
-}
-
-form #todo-input:active {
-  background-color: #181818;
-}
-
-
-/* Add the following CSS to your existing stylesheet */
-
+input,
 textarea {
-  width: 100%;
-   background-color: #181818;
-  color: #333; 
-  padding: 0.5rem;
-  outline: none;
-  border: 2px solid transparent; 
-  margin-bottom: 0.7rem;
-  margin-right: 6rem;
-  padding: 0;
-  margin-left: 0.5rem;
-  transition: border-color 0.3s ease;
-  margin-top: 1rem;
-  font-size: 0.8rem;
-  font-family: 'Josefin Sans', sans-serif;
-
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
 }
-
-textarea:focus,
-textarea:not(:placeholder-shown) {
-  outline: 1px solid #777a92;
-  color: white;
-
-}
-
-
-.issue-header.completed {
-  opacity: 0.5; 
-}
-
-
-form .add-issue {
-  height: 2.9rem;
-  width: 2.9rem;
-  background-color: inherit;
-  border: none;
-  border-top-right-radius: inherit;
-  border-bottom-right-radius: inherit;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: white;
-  margin-right: 2rem;
-}
-
 /* Issue container styling */
 .issue-container {
   box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.877), 2px 5px 7px rgba(0, 0, 0, 0.877), 1px 7px 4px rgba(0, 0, 0, 0.877);
@@ -363,6 +305,8 @@ p .placeholder {
 .update-form label {
   display: block;
   margin-bottom: 8px;
+  color: #181818;
+  font-size: 1rem;
 }
 
 .update-form input,

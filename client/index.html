@@ -26,20 +26,24 @@
           <h1>GitHub Issues</h1>
         </header>
         <form id="createIssueForm">
-          <span class="round"></span>
-          <input
-            type="text"
-            id="todo-input"
-            placeholder="Create a new issue..."
-          />
-        </form>
-        <form>
-          <span class="round"></span>
-          <textarea
+          <div class="input">
+            <label for="todo-input">Title</label>
+            <input
+              type="text"
+              id="todo-input"
+              placeholder="Create a new issue..."
+            />
+          </div>
+
+          <div class="textarea">
+            <label for="issue-body">Description</label>
+            <textarea
             id="issue-body"
             placeholder="Issue description..."
           ></textarea>
+          </div>
         </form>
+     
         <button type="button" class="create-issue" onclick="handleCreateIssue()">Create</button>
 
 
