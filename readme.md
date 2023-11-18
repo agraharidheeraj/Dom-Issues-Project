@@ -13,7 +13,7 @@ This project is a simple web application for managing GitHub-like issues using t
 
 ## Demo
 
-![Design preview for the File Transfer pricing components coding challenge](./client/image/git.png)
+![Design preview for the File Transfer pricing components coding challenge](./client/image/active.png)
 
 
 ## Features
